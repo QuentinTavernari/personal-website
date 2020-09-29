@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 2em;
+  background: rgb(63, 63, 63);
+  color: white;
+  &-title {
+    margin: 0.5em;
+  }
+}
+
+.counter button {
+  color: white;
+  background: none;
+  font-size: .5em;
+  border: none;
+}
