@@ -1,15 +1,22 @@
 // == Import npm
 import React from 'react';
+import { Provider } from 'react-redux';
+import { Route, Switch } from 'react-router-dom';
 
 // == Import
-import Header from '../Header';
+import store from '../../store';
+import Homepage from '../Homepage';
+import Error404 from '../Error404';
 import './styles.css';
 
 // == Composant
 const App = () => (
-  <div className="app">
-    <Header />
-  </div>
+  <Provider store={store}>
+    <Switch>
+      <Route exact path="/" component={Homepage} />
+      <Route component={Error404} />
+    </Switch>
+  </Provider>
 );
 
 // == Export
