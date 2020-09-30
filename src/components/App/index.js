@@ -13,7 +13,7 @@ import './styles.css';
 const App = () => (
   <Provider store={store}>
     <Switch>
-      <Route exact path="/" component={Homepage} />
+      <Route exact path="/personal-website/" component={Homepage} />
       <Route component={Error404} />
     </Switch>
   </Provider>
