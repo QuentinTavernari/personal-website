@@ -11,20 +11,22 @@ import './styles.scss';
 
 // == Composant
 const Header = () => (
-  <header classNameName="header">
+  <header className="header">
     <nav className="navbar navbar-expand-lg navbar-light">
       <h1 className="navbar-brand"><Link className="link link--kukuri" data-letters="Quentin Tavernari" to="/personal-website/">Quentin Tavernari</Link></h1>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon" />
       </button>
-
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-            <Link className="nav-item-home" href="/personal-website/">Home <span className="sr-only">(current)</span></Link>
+          <li className="nav-item">
+            <Link className="nav-item-home" to="/personal-website/">Home</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-item-cv" href="#">Link</Link>
+            <Link className="nav-item-cv" to="/personal-website/cv">Mon CV</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-item-contact" to="/personal-website/contact">Me contacter</Link>
           </li>
         </ul>
       </div>

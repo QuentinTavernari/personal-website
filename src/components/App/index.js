@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 // == Import
 import store from '../../store';
 import Homepage from '../Homepage';
+import Contact from '../Contact';
 import Error404 from '../Error404';
 import './styles.css';
 
@@ -14,6 +15,7 @@ const App = () => (
   <Provider store={store}>
     <Switch>
       <Route exact path="/personal-website/" component={Homepage} />
+      <Route exact path="/personal-website/contact/" component={Contact} />
       <Route component={Error404} />
     </Switch>
   </Provider>

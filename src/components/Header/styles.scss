@@ -1,6 +1,5 @@
 .header {
   width: 100%;
-  font-size: 2em;
   background: rgb(63, 63, 63);
   color: white;
   &-title {
@@ -42,6 +41,10 @@
 
   &-cv {
     color:#679864;
+  }
+
+  &-contact {
+    color: #5E83AC;
   }
 }
 
