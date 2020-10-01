@@ -21,10 +21,10 @@ const Header = () => (
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-            <Link className="nav-item" data-letters="Home" href="/personal-website/">Home <span className="sr-only">(current)</span></Link>
+            <Link className="nav-item-home" href="/personal-website/">Home <span className="sr-only">(current)</span></Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-item" data-letters="Home" href="#">Link</Link>
+            <Link className="nav-item-cv" href="#">Link</Link>
           </li>
         </ul>
       </div>

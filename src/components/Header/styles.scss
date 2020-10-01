@@ -1,6 +1,4 @@
 .header {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   font-size: 2em;
   background: rgb(63, 63, 63);
@@ -16,24 +14,37 @@
   background: rgb(63, 63, 63);
   color: white;
   font-family: 'CoreCircus', sans-serif;
+
   &-brand {
     letter-spacing: -.2rem;
-    font-size: 1.8em;
-    margin: 0.5em;
+    font-size: 1.5em;
+    margin: 0.5em 1em 0.25em 0.25em;
+
     :hover {
       text-decoration: none;
       color: white;
     }
+
   }
 }
 
 .nav-item {
   margin: 0.5em;
+
   :hover {
     text-decoration: none;
-    color: white;
+    color:#cecece;
+  }
+
+  &-home {
+    color:#A56D50;
+  }
+
+  &-cv {
+    color:#679864;
   }
 }
+
 
 .link {
   outline: none;
@@ -60,9 +71,9 @@
 .link--kukuri::after {
   content: '';
   position: absolute;
-  height: 16px;
+  height: 5px;
   width: 100%;
-  top: 50%;
+  top: 80%;
   margin-top: -8px;
   right: 0;
   background: #F9F9F9;
@@ -83,7 +94,7 @@
   position: absolute;
   z-index: 2;
   overflow: hidden;
-  color: #ffffff;
+  color: #cecece;
   white-space: nowrap;
   width: 0%;
   transition: width 0.4s 0.3s;
@@ -92,4 +103,5 @@
 .link--kukuri:hover::before {
   width: 100%;
 }
+
 
