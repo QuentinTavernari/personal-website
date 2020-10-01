@@ -1,5 +1,6 @@
 // == Import npm
 import React, { useEffect } from 'react';
+import emailjs from 'emailjs-com';
 
 // == Import
 import './styles.scss';
@@ -9,6 +10,7 @@ const ConsoleEffect = () => {
   useEffect(() => {
     consoleText(['Bonjour !', 'Bienvenue sur mon site.', "Accédez aux catégories à l'aide du header"], 'text', ['tomato', 'rebeccapurple', 'lightblue']);
   });
+  console.log(emailjs);
   // function([string1, string2],target id,[color1,color2])
 
   function consoleText(words, id, colors) {

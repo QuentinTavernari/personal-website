@@ -1,6 +1,6 @@
 // == Import : npm
 import React from 'react';
-import { emailjs, init } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
@@ -11,8 +11,6 @@ import {
 // == Import : local
 import './styles.scss';
 import Header from '../Header';
-
-init('user_3A2LAMBGj0zkhQGT1D4LG');
 
 // == Composant
 const Contact = ({
@@ -28,10 +26,10 @@ const Contact = ({
   const handleMessage = (evt) => {
     contactInputChange('message', evt.target.value);
   };
+  console.log(emailjs);
   const sendEmail = (evt) => {
     console.log(contactData);
-    emailjs
-      .send('service_l6cb95b', 'template_9jf6epb', evt.target)
+    emailjs.send('service_l6cb95b', 'template_9jf6epb', contactData, 'user_3A2LAMBGj0zkhQGT1D4LG')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
       }, (error) => {
