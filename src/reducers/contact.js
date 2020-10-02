@@ -1,5 +1,5 @@
 import {
-  CONTACT_INPUT_CHANGE,
+  CONTACT_INPUT_CHANGE, CONTACT_INPUT_DELETE,
 } from '../actions';
 
 const initialState = {
@@ -18,6 +18,15 @@ const contact = (state = initialState, action = {}) => {
         contactData: {
           ...state.contactData,
           [action.stateName]: action.payload,
+        },
+      };
+    case CONTACT_INPUT_DELETE:
+      return {
+        ...state,
+        contactData: {
+          name: '',
+          email: '',
+          message: '',
         },
       };
     default:
