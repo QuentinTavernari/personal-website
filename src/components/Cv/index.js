@@ -1,6 +1,8 @@
 // == Import npm
-import React from 'react';
+import React, { useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
+// import Swing from 'react-reveal/Swing';
+import ProgressBar from 'react-bootstrap/ProgressBar';
 
 // == Import
 import Header from '../Header';
@@ -63,6 +65,49 @@ const Cv = () => (
               <li className="cv-experiences-description">- Proposition et application d'actions web merchandising</li>
               <li className="cv-experiences-description">- Brief et validation de newsletters</li>
             </ul>
+          </div>
+        </Fade>
+        <Fade right cascade>
+          <h3 className="cv-education">Formations</h3>
+          <div className="cv-education-item">
+            <p className="cv-education-school">Ecole O'clock</p>
+            <p className="cv-education-training">Formation Full Stack Javascript | Mars - Dec 2020</p>
+            <p>735 heures de formation qui m'ont permises d'approfondir mes connaissances en Javascript et de devenir autonome sur React/Redux et Node.js</p>
+          </div>
+          <div className="cv-education-item">
+            <p className="cv-education-school">Université de Paris Est Creteil</p>
+            <p className="cv-education-training">Master 1 et 2 E-Commerce | Sept 2013 - Dec 2015</p>
+            <p>Compétences acquises en : E-commerce, gestion de projet, cybersécurité, acquisition de trafic (SEO, SEA, CRM)</p>
+          </div>
+          <div className="cv-education-item">
+            <p className="cv-education-school">Université de Bourgogne</p>
+            <p className="cv-education-training">Licence Pro Commercialisation de produits en ligne | Oct 2012 - Juin 2013</p>
+            <p>Compétences acquises en : Web marketing, création de sites web, graphisme, développement web (HTML5 / CSS3)</p>
+          </div>
+          <div className="cv-education-item">
+            <p className="cv-education-school">Université de Bourgogne</p>
+            <p className="cv-education-training">DUT Techniques de commercialisation | Sept 2010 - Juin 2012</p>
+            <p>Compétences acquises en : Marketing, négociation, droit, économie, communication</p>
+          </div>
+        </Fade>
+        <Fade left cascade>
+          <h3 className="cv-languages">Langues</h3>
+          <div className="cv-languages-item">
+            <p className="cv-languages-name">Anglais</p>
+            <ProgressBar className="cv-languages-progressbar" animated now={75} />
+          </div>
+          <div className="cv-languages-item">
+            <p className="cv-languages-name">Italien</p>
+            <ProgressBar className="cv-languages-progressbar" animated now={35} />
+          </div>
+        </Fade>
+        <Fade right cascade>
+          <h3 className="cv-hobbies">Loisirs</h3>
+          <div className="cv-hobbies-item">
+            <p className="cv-hobbies-description">J'ai déjà eu la chance de visiter une bonne dizaine de pays... mais dans 20 ans j'aimerais en avoir fait le triple !</p>
+          </div>
+          <div className="cv-hobbies-item">
+            <p className="cv-hobbies-description">J'aime l'informatique depuis tout petit. Je pourrais parler carte graphique pendant des heures...</p>
           </div>
         </Fade>
       </div>
