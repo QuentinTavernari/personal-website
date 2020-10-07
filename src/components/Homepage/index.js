@@ -10,7 +10,7 @@ import './styles.css';
 const Homepage = () => (
   <div className="app">
     <Header />
-    <ConsoleEffect />
+    {/* <ConsoleEffect /> */}
   </div>
 );
 

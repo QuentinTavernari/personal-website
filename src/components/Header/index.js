@@ -28,10 +28,10 @@ const Header = () => (
           <li className="nav-item">
             <Link className="nav-item-contact" to="/personal-website/contact">Me contacter</Link>
           </li>
+          <li className="nav-item">
+            <a className="nav-item-github" href="https://github.com/QuentinTavernari" target="blank">Github<img className="github-logo" alt="github logo" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" /></a>
+          </li>
         </ul>
-      </div>
-      <div className="social">
-        <a href="https://github.com/QuentinTavernari" target="blank"><img className="github-logo" alt="github logo" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" /></a>
       </div>
     </nav>
   </header>
