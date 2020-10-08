@@ -5,21 +5,49 @@ body {
 .homepage {
   width: 90%;
   margin: auto;
-  color: #cecece;
+  color:#cecece;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+
   &-introduction {
-    height: 30vh;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin: auto;
+    margin-bottom: 2vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
   }
+
+  &-title {
+    font-size: 4em;
+  }
+
+  &-content {
+    font-size: 1.3em;
+    text-align: left;
+  }
+
 }
 
 .app {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background: linear-gradient(-45deg, #A56D50, #679864, #5E83AC, #F0E89C);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
