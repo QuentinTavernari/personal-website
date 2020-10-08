@@ -1,0 +1,15 @@
+.footer {
+  width: 100%;
+  background: rgb(63, 63, 63);
+  &-copyright {
+    font-size: 0.65em;
+    font-family: 'CoreCircus', sans-serif;
+    color: rgb(177, 177, 177);
+    letter-spacing: -.1rem;
+    margin: 0;
+    margin-left: 3vw;
+  }
+  min-height: 5vh;
+  display: flex;
+  align-items: center;
+  }

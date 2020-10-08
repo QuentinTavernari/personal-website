@@ -4,6 +4,7 @@ import React from 'react';
 // == Import
 import Header from '../Header';
 import ConsoleEffect from '../CssEffects/ConsoleEffect';
+import Footer from '../Footer';
 import './styles.scss';
 
 // == Composant
@@ -19,6 +20,7 @@ const Homepage = () => (
       </div>
       <ConsoleEffect />
     </div>
+    <Footer />
   </div>
 );
 

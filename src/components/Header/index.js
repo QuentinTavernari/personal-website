@@ -3,6 +3,7 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import Pulse from 'react-reveal/Pulse';
 
 // import { } from '../../actions';
 
@@ -13,7 +14,9 @@ import './styles.scss';
 const Header = () => (
   <header className="header">
     <nav className="navbar navbar-expand-lg navbar-light">
-      <h1 className="navbar-brand"><Link className="link link--kukuri" data-letters="Quentin Tavernari" to="/personal-website/">Quentin Tavernari</Link></h1>
+      <Pulse>
+        <h1 className="navbar-brand"><Link className="link link--kukuri" data-letters="Quentin Tavernari" to="/personal-website/">Quentin Tavernari</Link></h1>
+      </Pulse>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon" />
       </button>

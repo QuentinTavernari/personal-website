@@ -14,6 +14,7 @@ import {
 import './styles.scss';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from '../Header';
+import Footer from '../Footer';
 
 // == Composant
 const Contact = ({
@@ -77,6 +78,7 @@ const Contact = ({
         </button>
         <ToastContainer />
       </form>
+      <Footer />
     </div>
   );
 };

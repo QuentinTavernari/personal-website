@@ -6,6 +6,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 
 // == Import
 import Header from '../Header';
+import Footer from '../Footer';
 import './styles.scss';
 
 // == Composant
@@ -36,7 +37,7 @@ const Cv = () => (
         </div>
       </div>
       <div className="cv-body">
-        <Fade left cascade>
+        <Fade right cascade>
           <h3 className="cv-experiences">Experiences</h3>
           <div className="cv-experiences-item">
             <p className="cv-experiences-job">Chef de marché marketplace</p>
@@ -67,7 +68,7 @@ const Cv = () => (
             </ul>
           </div>
         </Fade>
-        <Fade right cascade>
+        <Fade left cascade>
           <h3 className="cv-education">Formations</h3>
           <div className="cv-education-item">
             <p className="cv-education-school">Ecole O'clock</p>
@@ -90,7 +91,7 @@ const Cv = () => (
             <p>Compétences acquises en : Marketing, négociation, droit, économie, communication</p>
           </div>
         </Fade>
-        <Fade left cascade>
+        <Fade right cascade>
           <h3 className="cv-languages">Langues</h3>
           <div className="cv-languages-item">
             <p className="cv-languages-name">Anglais</p>
@@ -101,7 +102,7 @@ const Cv = () => (
             <ProgressBar className="cv-languages-progressbar" animated now={35} />
           </div>
         </Fade>
-        <Fade right cascade>
+        <Fade left cascade>
           <h3 className="cv-hobbies">Loisirs</h3>
           <div className="cv-hobbies-item">
             <p className="cv-hobbies-description">J'ai déjà eu la chance de visiter une bonne dizaine de pays... mais dans 20 ans j'aimerais en avoir fait le triple !</p>
@@ -112,6 +113,7 @@ const Cv = () => (
         </Fade>
       </div>
     </div>
+    <Footer />
   </div>
 );
 
