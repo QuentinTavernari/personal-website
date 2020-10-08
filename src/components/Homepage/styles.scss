@@ -3,14 +3,11 @@ body {
 }
 
 .homepage {
-  width: 90%;
-  margin: auto;
+  width: 100%;
   color:#cecece;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  
+  margin: 0;
+  padding: 5vh 3vh 5vh 3vh;
+  min-height: 85vh;
 
   &-introduction {
     margin: auto;
@@ -29,16 +26,18 @@ body {
     text-align: left;
   }
 
+  background: linear-gradient(-45deg, #A56D50, #679864, #5E83AC, #F0E89C);
+	background-size: 500vh 500vh;
+	animation: gradient 10s ease infinite;
+
 }
 
-.app {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background: linear-gradient(-45deg, #A56D50, #679864, #5E83AC, #F0E89C);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-}
+// .app {
+//   min-height: 100vh;
+//   background: linear-gradient(-45deg, #A56D50, #679864, #5E83AC, #F0E89C);
+// 	background-size: 200vh 200vh;
+// 	animation: gradient 10s ease infinite;
+// }
 
 @keyframes gradient {
 	0% {
@@ -63,7 +62,6 @@ body {
   
     &-content {
       font-size: 1em;
-      text-align: left;
     }
   
   }

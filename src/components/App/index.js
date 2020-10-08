@@ -9,7 +9,6 @@ import Homepage from '../Homepage';
 import CV from '../Cv';
 import Contact from '../Contact';
 import Error404 from '../Error404';
-import './styles.css';
 
 // == Composant
 const App = () => (

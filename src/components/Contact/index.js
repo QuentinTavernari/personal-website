@@ -43,6 +43,7 @@ const Contact = ({
         console.log('FAILED...', error);
       });
   };
+
   return (
     <div className="contact">
       <Header />
@@ -62,12 +63,13 @@ const Contact = ({
         </div>
         <button
           type="submit"
-          className="btn link link--kukuri"
+          className="btn"
           onClick={(evt) => {
             if (contactData.name && contactData.email && contactData.message) {
               evt.preventDefault();
               sendEmail(evt);
-            } else {
+            }
+            else {
               evt.preventDefault();
               toast.error("Oups ! Je crois que vous avez oublié un champ. Votre message n'a pas pu être envoyé :'(", {
                 position: toast.POSITION.BOTTOM_CENTER,
