@@ -10,11 +10,16 @@ body {
   min-height: 85vh;
 
   &-introduction {
-    margin: auto;
-    margin-bottom: 2vh;
+    margin: 5vh auto 2vh auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    & span {
+      font-size: 2em;
+      position: relative;
+      left: 50%;
+    }
   }
 
   &-title {
@@ -31,13 +36,6 @@ body {
 	animation: gradient 10s ease infinite;
 
 }
-
-// .app {
-//   min-height: 100vh;
-//   background: linear-gradient(-45deg, #A56D50, #679864, #5E83AC, #F0E89C);
-// 	background-size: 200vh 200vh;
-// 	animation: gradient 10s ease infinite;
-// }
 
 @keyframes gradient {
 	0% {
@@ -62,6 +60,10 @@ body {
   
     &-content {
       font-size: 1em;
+    }
+
+    & span {
+      font-size: 1.3em;
     }
   
   }
