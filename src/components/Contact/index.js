@@ -13,8 +13,6 @@ import {
 // == Import : local
 import './styles.scss';
 import 'react-toastify/dist/ReactToastify.css';
-import Header from '../Header';
-import Footer from '../Footer';
 
 // == Composant
 const Contact = ({
@@ -45,9 +43,9 @@ const Contact = ({
   };
 
   return (
-    <div className="contact">
-      <Header />
+    <div className="container" id="contact">
       <form className="contact-form">
+        <h2>Contactez-moi !</h2>
         <div className="form-group">
           <label htmlFor="name">Votre nom</label>
           <input type="text" className="form-control" id="name" aria-describedby="name" placeholder="Saisissez ici votre nom" onChange={handleName} value={contactData.name} />
@@ -80,7 +78,6 @@ const Contact = ({
         </button>
         <ToastContainer />
       </form>
-      <Footer />
     </div>
   );
 };

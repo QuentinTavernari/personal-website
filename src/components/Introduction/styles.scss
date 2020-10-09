@@ -1,0 +1,68 @@
+.homepage {
+  width: 100%;
+  color:#cecece;
+  margin: 0;
+  padding: 5vh 3vh 5vh 3vh;
+  min-height: 90vh;
+
+  &-introduction {
+    margin: 5vh auto 2vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & span {
+      font-size: 2em;
+      position: relative;
+      left: 50%;
+    }
+  }
+
+  &-title {
+    font-size: 4em;
+  }
+
+  &-content {
+    font-size: 1.3em;
+    text-align: left;
+  }
+}
+
+#home {
+  padding: 0;
+  background: linear-gradient(-45deg, #A56D50, #679864, #5E83AC, #F0E89C);
+  background-size: 500vh 500vh;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 400px) {
+  /* Styles */
+  .homepage {
+
+    &-title {
+      font-size: 3em;
+    }
+  
+    &-content {
+      font-size: 1em;
+    }
+
+    & span {
+      font-size: 1.3em;
+    }
+  
+  }
+}

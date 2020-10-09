@@ -1,5 +1,7 @@
 .header {
   width: 100%;
+  margin: 0;
+  padding: 0;
   background: rgb(63, 63, 63);
   color: white;
   &-title {
@@ -12,7 +14,6 @@
 
 .navbar {
   background: rgb(63, 63, 63);
-  color: white;
   font-family: 'CoreCircus', sans-serif;
   min-height: 10vh;
   display: flex;
@@ -25,12 +26,7 @@
     height: 3vw;
     margin: 0;
     padding: 0;
-
-    :hover {
-      text-decoration: none;
-      color: white;
-    }
-
+    color: #b8b8b8;
   }
 
 }

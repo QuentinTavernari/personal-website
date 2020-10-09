@@ -1,23 +1,20 @@
 // == Import npm
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-// import Swing from 'react-reveal/Swing';
+
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 
 // == Import
-import Header from '../Header';
-import Footer from '../Footer';
 import './styles.scss';
 
 // == Composant
 const Cv = () => (
-  <div>
-    <Header />
+  <div className="container" id="cv">
     <div className="cv container">
       <div className="cv-header">
-        <div><img className="cv-header-photo" src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/120733430_10225326530339270_4754303876415380686_n.jpg?_nc_cat=106&_nc_sid=730e14&_nc_ohc=WnMImsY2NUQAX8n2w0o&_nc_ht=scontent-cdt1-1.xx&oh=984221b558cb77ea2bb12f85067e9b67&oe=5F9D0B06" alt="Quentin Tavernari" /></div>
+        <div className="cv-header-photo"><img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/120733430_10225326530339270_4754303876415380686_n.jpg?_nc_cat=106&_nc_sid=730e14&_nc_ohc=WnMImsY2NUQAX8n2w0o&_nc_ht=scontent-cdt1-1.xx&oh=984221b558cb77ea2bb12f85067e9b67&oe=5F9D0B06" alt="Quentin Tavernari" /></div>
         <div>
           <h2 className="cv-header-maintitle">Développeur full stack Javascript</h2>
           <div className="cv-header-subtitle">
@@ -160,7 +157,6 @@ const Cv = () => (
         </Accordion>
       </div>
     </div>
-    <Footer />
   </div>
 );
 
