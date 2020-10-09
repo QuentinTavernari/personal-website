@@ -4,6 +4,9 @@
   margin: 0;
   padding: 5vh 3vh 5vh 3vh;
   min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
   &-introduction {
     margin: 5vh auto 2vh auto;
@@ -20,6 +23,7 @@
 
   &-title {
     font-size: 4em;
+    align-self: flex-start;
   }
 
   &-content {
@@ -64,5 +68,61 @@
       font-size: 1.3em;
     }
   
+  }
+}
+
+
+.wrap {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-self: center;
+}
+
+img {
+  height: 50px;
+  width: auto;
+  color: #cecece;
+}
+
+.wrap img {
+  margin: 0;
+  line-height: 50px;
+  position: relative;
+  top: 100%;
+  bottom: 0px;
+}
+
+.bounce {
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation: bounce 3.6s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  5.55556% {
+    transform: translateY(0);
+  }
+  11.11111% {
+    transform: translateY(0);
+  }
+  22.22222% {
+    transform: translateY(-15px);
+  }
+  27.77778% {
+    transform: translateY(0);
+  }
+  33.33333% {
+    transform: translateY(-15px);
+  }
+  44.44444% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
