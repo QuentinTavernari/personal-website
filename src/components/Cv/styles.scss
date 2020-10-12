@@ -64,6 +64,8 @@
         color: #cecece;
         border-bottom: 3px solid;
         border-color: #5E83AC;
+        display: flex;
+        justify-content: space-between;
       }
 
       &-job {
@@ -91,6 +93,8 @@
         color: #cecece;
         border-bottom: 3px solid;
         border-color: #F0E89C;
+        display: flex;
+        justify-content: space-between;
       }
 
       &-school {
@@ -118,6 +122,8 @@
         color: #cecece;
         border-bottom: 3px solid;
         border-color: #A56D50;
+        display: flex;
+        justify-content: space-between;
       }
       
   
@@ -137,6 +143,8 @@
         color: #cecece;
         border-bottom: 3px solid;
         border-color: #679864;
+        display: flex;
+        justify-content: space-between;
       }
   
       &-item {
@@ -152,6 +160,11 @@
         width: 30vw;
       }
     } 
+
+    &-plus-icon {
+      width: auto;
+      height: 1.5rem;
+    }
   }
 }
 

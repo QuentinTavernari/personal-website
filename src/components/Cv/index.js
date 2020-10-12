@@ -43,6 +43,7 @@ const Cv = () => (
                 <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
                   <div className="cv-body-experiences-title">
                     <h3>Experiences</h3>
+                    <img className="cv-body-plus-icon" alt="plus icon" src="https://www.pinclipart.com/picdir/big/566-5660028_icon-plus-png-grey-plus-sign-icon-clipart.png" />
                   </div>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
@@ -84,7 +85,10 @@ const Cv = () => (
             <Card className="accordion-card">
               <div className="cv-body-education">
                 <Accordion.Toggle as={Card.Header} variant="link" eventKey="1">
-                  <div className="cv-body-education-title"><h3>Formations</h3></div>
+                  <div className="cv-body-education-title">
+                    <h3>Formations</h3>
+                    <img className="cv-body-plus-icon" alt="plus icon" src="https://www.pinclipart.com/picdir/big/566-5660028_icon-plus-png-grey-plus-sign-icon-clipart.png" />
+                  </div>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="1">
                   <div>
@@ -118,7 +122,10 @@ const Cv = () => (
             <Card className="accordion-card">
               <div className="cv-body-languages">
                 <Accordion.Toggle as={Card.Header} variant="link" eventKey="2">
-                  <div className="cv-body-languages-title"><h3>Langues</h3></div>
+                  <div className="cv-body-languages-title">
+                    <h3>Langues</h3>
+                    <img className="cv-body-plus-icon" alt="plus icon" src="https://www.pinclipart.com/picdir/big/566-5660028_icon-plus-png-grey-plus-sign-icon-clipart.png" />
+                  </div>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="2">
                   <div>
@@ -139,7 +146,10 @@ const Cv = () => (
             <Card className="accordion-card">
               <div className="cv-body-hobbies">
                 <Accordion.Toggle as={Card.Header} variant="link" eventKey="3">
-                  <div className="cv-body-hobbies-title"><h3>Loisirs</h3></div>
+                  <div className="cv-body-hobbies-title">
+                    <h3>Loisirs</h3>
+                    <img className="cv-body-plus-icon" alt="plus icon" src="https://www.pinclipart.com/picdir/big/566-5660028_icon-plus-png-grey-plus-sign-icon-clipart.png" />
+                  </div>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="3">
                   <div>
