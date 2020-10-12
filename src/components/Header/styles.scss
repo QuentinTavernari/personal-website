@@ -41,6 +41,8 @@
 
 .nav-item {
   margin: 0.5em;
+  display: flex;
+  align-items: center;
 
   :hover {
     text-decoration: none;
