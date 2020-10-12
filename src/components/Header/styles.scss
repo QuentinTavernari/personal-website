@@ -1,18 +1,11 @@
 .header {
   width: 100%;
-  background: rgb(63, 63, 63);
-  color: white;
-  &-title {
-    font-family: 'CoreCircus', sans-serif;
-    color: rgb(177, 177, 177);
-    letter-spacing: -.3rem;
-  }
-  min-height: 10vh;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
   background: rgb(63, 63, 63);
-  color: white;
   font-family: 'CoreCircus', sans-serif;
   min-height: 10vh;
   display: flex;
@@ -25,12 +18,11 @@
     height: 3vw;
     margin: 0;
     padding: 0;
+    color: #b8b8b8;
+  }
 
-    :hover {
-      text-decoration: none;
-      color: white;
-    }
-
+  &-toggler {
+    border: 1px solid rgb(49, 49, 49);
   }
 
 }

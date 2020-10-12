@@ -2,7 +2,6 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 import Pulse from 'react-reveal/Pulse';
 
 // import { } from '../../actions';
@@ -13,23 +12,23 @@ import './styles.scss';
 // == Composant
 const Header = () => (
   <header className="header">
-    <nav className="navbar navbar-expand-lg navbar-light">
+    <nav className="navbar navbar-expand-lg">
       <Pulse>
-        <h1 className="navbar-brand"><Link className="link link--kukuri" data-letters="Quentin Tavernari" to="/personal-website/">Quentin Tavernari</Link></h1>
+        <h1 className="navbar-brand">Quentin Tavernari</h1>
       </Pulse>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button className="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon" />
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
-            <Link className="nav-item-home" to="/personal-website/">Home</Link>
+            <a className="nav-item-home" href="#home">Home</a>
           </li>
           <li className="nav-item">
-            <Link className="nav-item-cv" to="/personal-website/cv">Mon CV</Link>
+            <a className="nav-item-cv" href="#cv">Mon CV</a>
           </li>
           <li className="nav-item">
-            <Link className="nav-item-contact" to="/personal-website/contact">Me contacter</Link>
+            <a className="nav-item-contact" href="#contact">Me contacter</a>
           </li>
           <li className="nav-item">
             <a className="nav-item-github" href="https://github.com/QuentinTavernari" target="blank">Github<img className="github-logo" alt="github logo" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" /></a>
