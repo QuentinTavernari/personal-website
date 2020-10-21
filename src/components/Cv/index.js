@@ -6,6 +6,12 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 
+import Photo from '../../img/photo.jpg';
+import ReactLogo from '../../img/react-logo.svg';
+import ReduxLogo from '../../img/redux-logo.png';
+import NodeLogo from '../../img/node-logo.png';
+import WhiteArrow from '../../img/white-down-arrow.jpg';
+
 // == Import
 import './styles.scss';
 
@@ -14,22 +20,22 @@ const Cv = () => (
   <div className="container" id="cv">
     <div className="cv container">
       <div className="cv-header">
-        <div className="cv-header-photo"><img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/120733430_10225326530339270_4754303876415380686_n.jpg?_nc_cat=106&_nc_sid=730e14&_nc_ohc=WnMImsY2NUQAX8n2w0o&_nc_ht=scontent-cdt1-1.xx&oh=984221b558cb77ea2bb12f85067e9b67&oe=5F9D0B06" alt="Quentin Tavernari" /></div>
+        <div className="cv-header-photo"><img src={Photo} alt="Quentin Tavernari" /></div>
         <div>
           <h2 className="cv-header-maintitle">Développeur full stack Javascript</h2>
           <div className="cv-header-subtitle">
             <Fade left cascade>
               <div className="cv-header-subtitle-element">
                 <p>React</p>
-                <img className="cv-header-techno-logo" alt="react logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" />
+                <img className="cv-header-techno-logo" alt="react logo" src={ReactLogo} />
               </div>
               <div className="cv-header-subtitle-element">
                 <p>Redux</p>
-                <img className="cv-header-techno-logo" alt="redux logo" src="https://png2.cleanpng.com/sh/4a9464079da16cda5b54e7007a0ee22e/L0KzQYm3VsI2N6d7kpH0aYP2gLBuTgJmbKZ9ReRuYXP3Pb32hB8ucpJ7eeVscnnzhH7rkb02amQ2UKkANnLkQ4m6Vb44PWY5UKQAMEG4QoqCV8I2Pmc8TqQDLoDxd1==/kisspng-redux-react-logo-javascript-dq-5b318756ba3835.7554825015299725667628.png" />
+                <img className="cv-header-techno-logo" alt="redux logo" src={ReduxLogo} />
               </div>
               <div className="cv-header-subtitle-element">
                 <p>Node.js</p>
-                <img className="cv-header-techno-logo" alt="node.js logo" src="https://www.developpez.com/public/images/news/node-js10.png" />
+                <img className="cv-header-techno-logo" alt="node.js logo" src={NodeLogo} />
               </div>
             </Fade>
           </div>
@@ -43,7 +49,7 @@ const Cv = () => (
                 <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
                   <div className="cv-body-experiences-title">
                     <h3>Experiences</h3>
-                    <img className="cv-body-plus-icon" alt="plus icon" src="https://www.pngjoy.com/pngl/5/199075_plus-plus-sign-in-grey-png-download.png" />
+                    <img className="cv-body-arrow-icon" alt="plus icon" src={WhiteArrow} />
                   </div>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
@@ -87,7 +93,7 @@ const Cv = () => (
                 <Accordion.Toggle as={Card.Header} variant="link" eventKey="1">
                   <div className="cv-body-education-title">
                     <h3>Formations</h3>
-                    <img className="cv-body-plus-icon" alt="plus icon" src="https://www.pngjoy.com/pngl/5/199075_plus-plus-sign-in-grey-png-download.png" />
+                    <img className="cv-body-arrow-icon" alt="plus icon" src={WhiteArrow} />
                   </div>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="1">
@@ -124,7 +130,7 @@ const Cv = () => (
                 <Accordion.Toggle as={Card.Header} variant="link" eventKey="2">
                   <div className="cv-body-languages-title">
                     <h3>Langues</h3>
-                    <img className="cv-body-plus-icon" alt="plus icon" src="https://www.pngjoy.com/pngl/5/199075_plus-plus-sign-in-grey-png-download.png" />
+                    <img className="cv-body-arrow-icon" alt="plus icon" src={WhiteArrow} />
                   </div>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="2">
@@ -148,7 +154,7 @@ const Cv = () => (
                 <Accordion.Toggle as={Card.Header} variant="link" eventKey="3">
                   <div className="cv-body-hobbies-title">
                     <h3>Loisirs</h3>
-                    <img className="cv-body-plus-icon" alt="plus icon" src="https://www.pngjoy.com/pngl/5/199075_plus-plus-sign-in-grey-png-download.png" />
+                    <img className="cv-body-arrow-icon" alt="plus icon" src={WhiteArrow} />
                   </div>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="3">
