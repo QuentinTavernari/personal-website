@@ -5,6 +5,7 @@ import React from 'react';
 import Header from '../Header';
 import Introduction from '../Introduction';
 import CV from '../Cv';
+import Work from '../Work';
 import Contact from '../Contact';
 import Footer from '../Footer';
 import './styles.scss';
@@ -15,6 +16,7 @@ const Homepage = () => (
     <Header />
     <Introduction />
     <CV />
+    <Work />
     <Contact />
     <Footer />
   </div>
