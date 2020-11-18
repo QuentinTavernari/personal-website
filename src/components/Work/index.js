@@ -21,6 +21,7 @@ const Work = () => (
         <p className="work-body-text-tim">Cette application vise a apporter une aide aux joueurs d'Escape From Tarkov. Ce projet est parti d'un constat entre joueurs : il manquait un outil permettant de comptabiliser les objets récupérés au cours des parties. Nous avons donc choisi d'en faire notre projet de fin de formation, et nous le continuons aujourd'hui. </p>
         <p className="work-body-text-tim">Ce projet utilise React, Redux et Node.js avec une API Postgres. Le site est aujourd'hui fonctionnel, et sa mise en ligne est prévue pour très bientôt.</p>
         <p className="work-body-text-tim">Le code est disponible <a href="https://github.com/Birdy87/Tarkov-Items-Manager" target="blank">a cette adresse</a>.</p>
+        <p className="work-body-text-tim">Une première version du site est disponible <a href="https://tarkovitemsmanager.netlify.app" target="blank">a cette adresse</a>.</p>
         <div className="work-body-photo-container-tim"><img className="work-body-photo-tim" src={Homepage} alt="page d'accueil tarkov items manager" /></div>
         <div className="work-body-photo-container-tim"><img className="work-body-photo-tim" src={Quests} alt="page quetes tarkov items manager" /></div>
       </div>
