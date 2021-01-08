@@ -7,9 +7,9 @@ import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 
 import Photo from '../../img/photo.jpg';
-import ReactLogo from '../../img/react-logo.svg';
-import ReduxLogo from '../../img/redux-logo.png';
-import NodeLogo from '../../img/node-logo.png';
+import BizDev from '../../img/picto-business-developpement-couleur.png';
+import Informatique from '../../img/picto-informatique.png';
+import Ecommerce from '../../img/picto-ecommerce.png';
 import WhiteArrow from '../../img/white-down-arrow.jpg';
 
 // == Import
@@ -22,20 +22,20 @@ const Cv = () => (
       <div className="cv-header">
         <div className="cv-header-photo"><img src={Photo} alt="Quentin Tavernari" /></div>
         <div>
-          <h2 className="cv-header-maintitle">Développeur full stack Javascript</h2>
+          <h2 className="cv-header-maintitle">Key Account Manager</h2>
           <div className="cv-header-subtitle">
             <Fade left cascade>
               <div className="cv-header-subtitle-element">
-                <p>React</p>
-                <img className="cv-header-techno-logo" alt="react logo" src={ReactLogo} />
+                <p>Business Development</p>
+                <img className="cv-header-techno-logo" alt="bizdev picto" src={BizDev} />
               </div>
               <div className="cv-header-subtitle-element">
-                <p>Redux</p>
-                <img className="cv-header-techno-logo" alt="redux logo" src={ReduxLogo} />
+                <p>Informatique</p>
+                <img className="cv-header-techno-logo" alt="informatique picto" src={Informatique} />
               </div>
               <div className="cv-header-subtitle-element">
-                <p>Node.js</p>
-                <img className="cv-header-techno-logo" alt="node.js logo" src={NodeLogo} />
+                <p>E-commerce</p>
+                <img className="cv-header-techno-logo" alt="node.js picto" src={Ecommerce} />
               </div>
             </Fade>
           </div>
@@ -60,6 +60,10 @@ const Cv = () => (
                       <ul>
                         <li className="cv-body-experiences-description">- Gestion des vendeurs clés sur les produits informatiques (CA du périmètre de ce poste supérieur à 10M€ annuels)</li>
                         <li className="cv-body-experiences-description">- Développement du CA du périmètre via différents leviers (offres en ligne, animation commerciale, recrutement, web-merchandising)</li>
+                        <li className="cv-body-experiences-description">- Lancement commercial de l'univers literie sur fnac.com : sélection
+                          et recrutement des vendeurs incontournables, création de l'espace
+                          literie, opérations commerciales de lancement.
+                        </li>
                       </ul>
                     </div>
                     <div className="cv-body-experiences-item">

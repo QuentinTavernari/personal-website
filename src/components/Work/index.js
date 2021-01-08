@@ -16,7 +16,7 @@ const Work = () => (
         <h2>Mes réalisations</h2>
       </div>
       <div className="work-body">
-        <div className="work-body-photo-container-tim"><img className="work-body-photo-tim" src={TimLogo} alt="logo tarkov items manager" /></div>
+        <div className="work-body-photo-container-logo"><img className="work-body-photo-tim" src={TimLogo} alt="logo tarkov items manager" /></div>
         <h3>Tarkov Items Manager</h3>
         <p className="work-body-text-tim">Cette application vise a apporter une aide aux joueurs d'Escape From Tarkov. Ce projet est parti d'un constat entre joueurs : il manquait un outil permettant de comptabiliser les objets récupérés au cours des parties. Nous avons donc choisi d'en faire notre projet de fin de formation, et nous le continuons aujourd'hui. </p>
         <p className="work-body-text-tim">Ce projet utilise React, Redux et Node.js avec une API Postgres.</p>
